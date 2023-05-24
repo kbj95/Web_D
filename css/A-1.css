@@ -1,0 +1,88 @@
+/* 공통 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+}
+ul,li{
+    list-style: none;
+}
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+    height: 700px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* header 영역 */
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+h1{
+    width: 200px;
+    height: 40px;
+    line-height: 100px;
+}
+nav{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 600px;
+    height: 150px;
+}
+ul.mainMenu > li{
+    float: left;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid #333333;
+    border-right: none;
+    background-color: rgb(182, 234, 255);
+}
+ul.mainMenu > li:last-child{
+    border-right: 1px solid #333333;
+}
+ul > li:hover{
+    background: rgb(0, 0, 80);
+    color: white;
+}
+ul.subMenu li:hover a{
+    color: white;
+}
+ul.subMenu{
+    background-color: white;
+    display: none;
+}
+
+/* slide 영역 */
+#slideArea{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+}
+
+/* container 영역 */
+#container{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+}
+
+/* footer 영역 */
+footer{
+    width: 100%;
+    height: 100px;
+    background: green;
+}
