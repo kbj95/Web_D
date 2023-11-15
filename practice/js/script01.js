@@ -19,4 +19,17 @@ $(document).ready(function(){
         $('.slide').eq(now-1).css('margin-left','-2000px');
         $('.slide').eq(now).css('margin-left','0');
     }
+
+    $('.galleryTab').click(function(){
+        $('.noticeTab').addClass('off');
+        $('.galleryTab').removeClass('off');
+        $('.notice').addClass('d-none');
+        $('.gallery').removeClass('d-none');
+    });
+    $('.noticeTab').click(function(){
+        $('.noticeTab').removeClass('off');
+        $('.galleryTab').addClass('off');
+        $('.notice').removeClass('d-none');
+        $('.gallery').addClass('d-none');
+    });
 });

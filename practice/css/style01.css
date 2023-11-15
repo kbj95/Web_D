@@ -114,9 +114,50 @@ ul.subMenu{
 #container{
     width: 100%;
     height: 200px;
-    background-color: blue;
 }
-
+.ngArea{
+    position: relative;
+    width: calc(1200px / 3) ;
+    height: 200px;
+}
+.galleryTab, .noticeTab{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    font-weight: 700;
+    text-align: center;
+    line-height: 28px;
+    z-index: 2;
+    background-color: white;
+}
+.noticeTab{
+    left: 125px;
+    border-left: none;
+}
+.notice, .gallery{
+    position: absolute;
+    top: 34px;
+    left: 5px;
+    width: 380px;
+    height: 150px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.notice li{
+    height: 30px;
+    text-indent: 10px;
+    line-height: 30px;
+}
+.off{
+    background-color: #ccc;
+}
+.d-none{
+    display: none;
+}
 /* footer 영역 */
 footer{
     width: 100%;
